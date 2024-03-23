@@ -1,0 +1,9 @@
+{
+  "name": "todo-react-client-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/todo-react-client-e2e/src",
+  "implicitDependencies": ["todo-react-client"],
+  "// targets": "to see all targets run: nx show project todo-react-client-e2e --web",
+  "targets": {}
+}

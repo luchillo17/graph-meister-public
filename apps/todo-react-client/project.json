@@ -1,0 +1,9 @@
+{
+  "name": "todo-react-client",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/todo-react-client/src",
+  "projectType": "application",
+  "tags": ["react", "taiwind", "vite", "vitest", "todo"],
+  "// targets": "to see all targets run: nx show project todo-react-client --web",
+  "targets": {}
+}
