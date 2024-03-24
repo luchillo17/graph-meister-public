@@ -1,0 +1,37 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+// Ribbon based on CSSOnly Ribbon https://www.freecodecamp.org/news/make-a-css-only-ribbon/
+interface Props extends HTMLAttributes<'div'> {
+  side: 'left' | 'right';
+}
+
+const {
+  side,
+  class: classStr,
+  'class:list': classList,
+  ...attrs
+} = Astro.props;
+---
+
+<div
+  {...attrs}
+  class="fixed top-0 bg-yellow-500 p-2 text-center font-semibold text-white shadow-lg shadow-yellow-500"
+  class:list={[
+    classStr,
+    classList,
+    'corner-ribbon',
+    side === 'left'
+      ? 'left-0 origin-top-right -translate-x-[29.3%] -rotate-45'
+      : 'right-0 origin-top-left translate-x-[29.3%] rotate-45',
+  ]}
+>
+  <slot />
+</div>
+
+<style>
+  .corner-ribbon {
+    box-shadow: 0 0 0 999px var(--tw-shadow-color);
+    clip-path: inset(0 -100%);
+  }
+</style>

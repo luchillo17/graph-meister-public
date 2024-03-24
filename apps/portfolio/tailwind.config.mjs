@@ -1,10 +1,9 @@
-import { join } from 'node:path';
-
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    join(__dirname, './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'),
-  ],
+  content: {
+    relative: true,
+    files: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  },
   theme: {
     extend: {},
   },
