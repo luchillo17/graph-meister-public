@@ -1,4 +1,6 @@
 ---
+import { t } from 'astro-i18n';
+
 import Card from '../components/Card.astro';
 import CornerRibbon from '../components/CornerRibbon.astro';
 import Layout from '../layouts/Layout.astro';
@@ -6,7 +8,7 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Welcome to Astro.">
   <main>
-    <CornerRibbon side="right">WIP</CornerRibbon>
+    <CornerRibbon side="right">{t('wip_github')}</CornerRibbon>
 
     <svg
       class="astro-a"
