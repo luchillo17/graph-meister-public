@@ -13,4 +13,8 @@ export default defineConfig({
     }),
     vue(),
   ],
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'es'],
+  },
 });
