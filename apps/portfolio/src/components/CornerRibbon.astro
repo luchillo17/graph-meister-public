@@ -16,11 +16,10 @@ const {
 
 <div
   {...attrs}
-  class="fixed top-0 bg-yellow-500 p-2 text-center font-semibold text-white shadow-lg shadow-yellow-500"
+  class="corner-ribbon fixed top-0 bg-yellow-500 p-2 text-center font-semibold text-white shadow-lg shadow-yellow-500 transition delay-150 duration-300 ease-in-out"
   class:list={[
     classStr,
     classList,
-    'corner-ribbon',
     side === 'left'
       ? 'left-0 origin-top-right -translate-x-[29.3%] -rotate-45'
       : 'right-0 origin-top-left translate-x-[29.3%] rotate-45',

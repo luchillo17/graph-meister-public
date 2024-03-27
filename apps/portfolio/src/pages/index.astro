@@ -4,11 +4,12 @@ import { t } from 'astro-i18n';
 import Card from '../components/Card.astro';
 import CornerRibbon from '../components/CornerRibbon.astro';
 import Layout from '../layouts/Layout.astro';
+import WIPRibbonGithub from '../components/WIPRibbonGithub.astro';
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
-    <CornerRibbon side="right">{t('wip_github')}</CornerRibbon>
+    <WIPRibbonGithub />
 
     <svg
       class="astro-a"

@@ -1,5 +1,6 @@
 import tailwind from '@astrojs/tailwind';
 import vue from '@astrojs/vue';
+import icon from 'astro-icon';
 import { defineConfig } from 'astro/config';
 import { join } from 'node:path';
 
@@ -10,6 +11,9 @@ export default defineConfig({
   integrations: [
     tailwind({
       configFile: join(import.meta.dirname, './tailwind.config.mjs'),
+    }),
+    icon({
+      iconDir: join(import.meta.dirname, './src/assets/icons'),
     }),
     vue(),
   ],

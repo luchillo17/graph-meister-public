@@ -1,0 +1,20 @@
+---
+import { t } from 'astro-i18n';
+import { Icon } from 'astro-icon/components';
+
+import CornerRibbon from './CornerRibbon.astro';
+---
+
+<CornerRibbon side="right" class="hover:bg-yellow-600 hover:shadow-yellow-600">
+  <a
+    href="https://github.com/luchillo17/graph-meister-public"
+    target="_blank"
+    class="flex gap-2"
+    rel="nofollow noopener noreferrer"
+    aria-label="Github portfolio link"
+  >
+    {t('wip_github')}
+
+    <Icon name="github-mark" title="GitHub icon" class="size-7" />
+  </a>
+</CornerRibbon>

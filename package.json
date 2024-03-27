@@ -57,6 +57,7 @@
   },
   "dependencies": {
     "astro-i18n": "^2.2.4",
+    "astro-icon": "^1.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router-dom": "6.22.3",
