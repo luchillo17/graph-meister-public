@@ -1,0 +1,37 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+import ThemeIcon from './ThemeIcon.astro';
+
+// Ribbon based on CSSOnly Ribbon https://www.freecodecamp.org/news/make-a-css-only-ribbon/
+interface Props {}
+
+const {} = Astro.props;
+---
+
+<header class="flex gap-2 p-2">
+  <nav>
+    <a href="/" aria-label="Logo, Go to homepage"> </a>
+
+    <ul class="">
+      <li>
+        <a href="/" aria-label="Go to homepage" class="text-background">Home</a>
+      </li>
+      <li><a href="" aria-label=""></a></li>
+      <li><a href="" aria-label=""></a></li>
+    </ul>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      class="h-6 w-6"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M3 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 5.25Zm0 4.5A.75.75 0 0 1 3.75 9h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 9.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+        clip-rule="evenodd"></path>
+    </svg>
+
+    <ThemeIcon />
+  </nav>
+</header>

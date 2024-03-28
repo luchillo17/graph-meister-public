@@ -11,6 +11,7 @@ export default defineConfig({
   integrations: [
     tailwind({
       configFile: join(import.meta.dirname, './tailwind.config.mjs'),
+      applyBaseStyles: false,
     }),
     icon({
       iconDir: join(import.meta.dirname, './src/assets/icons'),
