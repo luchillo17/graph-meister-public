@@ -12,7 +12,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="size-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
@@ -22,9 +22,15 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
 
-  <body class="bg-background">
+  <body class="grid size-full bg-background">
     <Header />
     <slot />
     <Footer />
   </body>
 </html>
+
+<style>
+  body {
+    grid-template-rows: auto 1fr auto;
+  }
+</style>
